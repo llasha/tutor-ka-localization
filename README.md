@@ -24,11 +24,13 @@ If a locale does not yet exist upstream, this plugin allows you to:
 Fork this repository and update the source code to include your language locale (e.g., `ka`).  
 Then clone **your fork** (not the upstream repository) in the next step.
 
+```text
 tutor-ka-localization/
 └── tutor_ka_localization/
     └── templates/
         └── custom_i18n/
             └── <your-locale>.json
+```
 
 This file should contain your compiled MFE translation catalog.
 Without this file, the plugin will build successfully but no translations will be injected into the MFEs.
