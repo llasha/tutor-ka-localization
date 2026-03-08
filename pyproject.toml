@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "tutor-ka-localization"
+version = "0.1.0"
+description = "Inject Georgian (ka) support into Open edX MFEs without forks."
+requires-python = ">=3.8"
+dependencies = ["tutor>=20.0.0,<22.0.0"]
+
+[project.entry-points."tutor.plugin.v1"]
+ka-localization = "tutor_ka_localization.plugin"
+
+[tool.setuptools.packages.find]
+where = ["."]
